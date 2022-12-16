@@ -20,7 +20,7 @@ export default function AlertDialog() {
   return (
     <div>
       <Button variant="contained" size="large" onClick={handleClickOpen}>
-        Open alert dialog
+        Sign In
       </Button>
       <Dialog
         open={open}
