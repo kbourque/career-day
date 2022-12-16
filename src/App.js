@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import { Typography, Button } from '@mui/material';
 import './App.css';
+import AlertDialog from './AlertDialog';
+import ButtonAppBar from './ButtonAppBar';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <ButtonAppBar />
       </header>
+      <div className="main">
+        <div className="title">
+          <Typography variant="h1" sx={{ fontWeight: "bold" }}>Super Secret Login Page</Typography>
+        </div>
+        <AlertDialog />
+        {/* <Button variant="contained" size="large" sx={{width: '10em'}}>Sign In</Button> */}
+      </div>
     </div>
   );
 }
